@@ -3,7 +3,7 @@
 
 include("db.php");
 
-$query_1 = "SELECT * FROM array_data WHERE nombre = 'Pablo' or nombre = 'Test2'";
+$query_1 = "SELECT * FROM array_data WHERE nombre = 'Pablo' or nombre = 'Test2' order by id desc";
 $query_2 = "SELECT * FROM array_data wHERE nombre = 'Pablo' or nombre = 'Test2'";
 // $query_2 = "SELECT * FROM array_data";
 $result_query_1 = mysqli_query($conn, $query_1);
